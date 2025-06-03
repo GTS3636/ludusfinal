@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/substyle.css">
+    <script src="../js/cadastrarLote.js" defer></script>
+    <link rel="icon" href="../image/ecafb909e97ee89d8c8246219685fa3650c19e20.png">
+    <title>Cadastro de Jogo</title>
+</head>
+<body>
+    <div class="container"> 
+    <br>
+    <h1>CADASTRAR LOTE</h1>
+    <main>
+        <button id="cadastrar" style="margin: 40px;" class="adic">Cadastrar</button>
+        <div id="res"></div>
+    </main>
+    </div>
+ <!-- Copia e cola essa parte de baixo pra tudo do site, please. -->
+
+ <button id="menu-toggle" class="menu-button">
+    &#9776;
+</button>
+
+<div class="left-menu" id="leftMenu">
+    <ul>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/cadastrar.html">Cadastrar Jogos</a></li>
+        <li><a href="../html/cadastrarLote.html">Cadastrar Lote</a></li>
+        <li><a href="../html/consultar.html">Consultar Jogos</a></li>
+        <li><a href="../html/deletar.html">Apagar Jogos</a></li>
+        <li><a href="../html/atualizar.html">Atualizar Jogos</a></li>
+        <li><a href="../html/graficoQuant.html">Gráficos</a></li>
+        <li><a href="../html/listarJogos.html">Listar Jogos</a></li>
+        <li><a href="../html/sobre.html">Sobre Ludus</a></li>
+    </ul>
+</div>
+</body>
+</html>
+<script>
+// AQUI QUE SE ABRE O Menu!!!&*621!
+const toggleButton = document.getElementById('menu-toggle');
+const menu = document.getElementById('leftMenu');
+
+toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('open');
+});
+</script>

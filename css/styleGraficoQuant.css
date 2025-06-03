@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    background-color: rgb(226, 226, 226);
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0px -5px 50px 10px rgba(0, 0, 0, 0.521);
+    height: 100vh;
+
+}
+
+
+
+header {
+    font-family: 'Silkscreen', 'Courier New', Courier, monospace;
+    font-weight: 900;
+    padding-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to top right, #8FCE12 0% 86%, rgb(255, 255, 255));
+    box-shadow: inset 0px -15px 20px -3px rgba(12, 2, 24, 0.655), 0px 10px 20px black;
+    border-radius: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: rgba(206, 0, 138, 0.85);
+
+}
+
+header h1 {
+    font-size: 33px;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header h1 {
+        font-size: 56px;
+        -webkit-text-stroke: black 2px;
+        text-shadow: 0px 5px 0 #16042b;
+        margin: 0;
+    }
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grid-item h2 {
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#graf,
+#graf2 {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+#gravar {
+    width: 140px;
+        height: 60px;
+        border: solid 2px black;
+        background-color: rgba(206, 0, 138, 0.85);
+        box-shadow: inset 0px -5px 2px -3px rgba(12, 2, 24, 0.655), 0px 6px 6px rgba(0, 0, 0, 0.379);
+        letter-spacing: -1.0px;
+        font-size: 20px;
+        color: white;
+        font-weight: 900;
+    }
+    #gravar:hover {
+        background-color: #8FCE12;
+}
+
+
+/* O MENU!!!!!!!!!!!!!!!*/
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    font-size: 30px;
+    background: transparent;
+    color: #8FCE12;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button:active {
+    transform: scale(0.9);
+}
+
+/* Menu lateral */
+.left-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 240px;
+    height: 100vh;
+    background-color: #202022;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    padding-left: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000 !important;
+}
+
+/* ABRINDO O MENU!!!!!!!! */
+.left-menu.open {
+    left: 0;
+}
+
+.left-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-menu li {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.left-menu a {
+    color: #8FCE12;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+.left-menu a:hover {
+    color: rgba(206, 0, 138, 0.85);
+}
+
+/* links que levam o usario a cadastrar ou logar na conta... que fica no cantinho da tela */
+.conta {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+    font-size: 30px;
+    color: #8FCE12;
+    border: none;
+    cursor: pointer;
+
+    a {
+        font-size: 80%;
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 10px;
+        animation: glow 1s cubic-bezier(0.95, 0, 0, 0.91) infinite alternate-reverse;
+
+    }
+
+    a:hover {
+        color: rgba(206, 0, 138, 0.85);
+    }
+
+    a:active {
+        color: #8FCE12;
+    }
+}
+
+
+
+/* MISC!!! Alterando a barrazinha... (￣y▽￣)╭ Ohohoho..... */
+
+::-webkit-scrollbar {
+    background: #1a1a1a;
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8FCE12;
+    border-radius: 5px;
+    border: 2px solid #313133;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(206, 0, 138, 0.85);
+}
+
+/* MISC 2... MUDANDO A cor DA SELEÇÃO DO MOUSE */
+
+::selection {
+    background: #8FCE12;
+    color: #000;
+}

@@ -1,0 +1,165 @@
+/* Aqui vai ser onde o usuário faz o login e cadastro... ambos iguais, certo? */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    img {
+        user-select: none !important;
+        -webkit-user-drag: none !important;
+    }
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.container {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    background-color: #363636;
+    box-shadow: inset 0px -5px 20px 10px rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+
+    h1 {
+        font-family: 'Silkscreen', 'Courier New', Courier, monospace;
+        text-shadow: 0px 5px 0 #16042b;
+        font-size: 86px;
+        -webkit-text-stroke: black 2px;
+        font-weight: 900;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(to top right, #8FCE12 0% 86%, rgb(255, 255, 255));
+        box-shadow: inset 0px -15px 20px -3px rgba(12, 2, 24, 0.655), 0px 10px 20px black;
+        border-radius: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        color: rgba(206, 0, 138, 0.85);
+    }
+
+}
+
+.home {
+    width: 200px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    border-bottom-right-radius: 30px;
+    background-color: #ffffff;
+    z-index: 1100;
+    font-size: 30px;
+
+    a {
+        font-size: 30px;
+        color: #000000;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 10px;
+
+    }
+
+    a:hover {
+        color: rgba(206, 0, 138, 0.85);
+    }
+
+    a:active {
+        color: #8FCE12;
+    }
+
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: content;
+    width: 50%;
+    color: #8FCE12;
+
+    text-shadow: 0px 5px 20px #16042b;
+    letter-spacing: 3.4px;
+    font-weight: 900;
+
+    /* :) */
+
+    input {
+        margin: 10px;
+        padding: 5px;
+        height: 30px;
+        border: solid 2px black;
+        box-shadow: inset 0px -5px 2px -3px rgba(12, 2, 24, 0.655), 0px 6px 6px rgba(0, 0, 0, 0.379);
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+        color: rgba(206, 0, 138, 0.85);
+        font-weight: 900;
+
+    }
+
+    button {
+        width: 140px;
+        height: 60px;
+        border: solid 2px black;
+        background-color: rgba(206, 0, 138, 0.85);
+        box-shadow: inset 0px -5px 2px -3px rgba(12, 2, 24, 0.655), 0px 6px 6px rgba(0, 0, 0, 0.379);
+        letter-spacing: -1.0px;
+        font-size: 20px;
+        color: white;
+        font-weight: 900;
+    }
+    button:hover{
+        background-color: #8FCE12;
+    }
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    color: #8FCE12;
+    padding: 40px;
+    a{
+        margin-left: 10px;
+        color: rgba(206, 0, 138, 0.85);
+    }
+    a:hover{
+        color: #8FCE12;
+        text-decoration: none;
+    }
+}
+
+
+
+
+/* MISC!!! Alterando a barrazinha... (￣y▽￣)╭ Ohohoho..... */
+
+::-webkit-scrollbar {
+    background: #1a1a1a;
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8FCE12;
+    border-radius: 5px;
+    border: 2px solid #313133;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(206, 0, 138, 0.85);
+}
+
+/* MISC 2... MUDANDO A cor DA SELEÇÃO DO MOUSE */
+
+::selection {
+    background: #8FCE12;
+    color: #000;
+}

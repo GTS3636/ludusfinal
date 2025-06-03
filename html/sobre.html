@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre a Ludus</title>
+  <link rel="stylesheet" href="../css/styleSobre.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../image/ecafb909e97ee89d8c8246219685fa3650c19e20.png">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>SOBRE A <span class="ludus-title">LUDUS</span></h1>
+      <img src="../image/ludovico.png" alt="Personagem Arcade" class="arcade-img" />
+      <p class="highlight">
+        Seja você um colecionador casual, um streamer com centenas de títulos,
+        uma loja de games ou uma escola que trabalha com gamificação,
+        a <strong>Ludus</strong> é para você.
+      </p>
+    </div>
+
+    <div class="right">
+      <section>
+        <h2>QUEM SOMOS................</h2>
+        <p>
+          Ludus nasceu da paixão por jogos — desde os clássicos até os títulos modernos.
+          Acreditamos que todo gamer merece um lugar para organizar, descobrir e compartilhar seus jogos favoritos.
+        </p>
+      </section>
+
+      <section>
+        <h2>NOSSA MISSÃO...............</h2>
+        <ul>
+          <li>Cadastrar seus jogos em segundos</li>
+          <li>Organizar por gênero, plataforma, nota e outros filtros</li>
+          <li>Compartilhar experiências com outros apaixonados</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>POR QUE "LUDUS"?......</h2>
+        <p>
+          "Ludus" é o termo em latim que significa "jogo". <br />
+          Optamos por esse nome pois ele captura a essência de nossa plataforma:
+          um ambiente para se divertir, aprender e interagir.
+        </p>
+      </section>
+
+      <section>
+        <h2>NOSSA EQUIPE..............</h2>
+        <div class="equipe">
+          <span>
+            <p id="gui">Guilherme Tomaz</p>
+          </span>
+          <span>
+            <p id="fer">Fernanda</p>
+          </span>
+          <span>
+            <p id="joa">João Roweder</p>
+          </span>
+          <span>
+            <p id="dan">Daniel Domingos</p>
+          </span>
+          <span>
+            <p id="isa">Isabela Campos</p>
+          </span>
+          <br>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Copia e cola essa parte de baixo pra tudo do site, please. -->
+
+  <button id="menu-toggle" class="menu-button">
+    &#9776;
+  </button>
+
+  <div class="left-menu" id="leftMenu">
+    <ul>
+        <li><a href="../html/index.html">Home</a></li>
+        <li><a href="../html/cadastrar.html">Cadastrar Jogos</a></li>
+        <li><a href="../html/cadastrarLote.html">Cadastrar Lote</a></li>
+        <li><a href="../html/consultar.html">Consultar Jogos</a></li>
+        <li><a href="../html/deletar.html">Apagar Jogos</a></li>
+        <li><a href="../html/atualizar.html">Atualizar Jogos</a></li>
+        <li><a href="../html/graficoQuant.html">Gráficos</a></li>
+        <li><a href="../html/listarJogos.html">Listar Jogos</a></li>
+        <li><a href="../html/sobre.html">Sobre Ludus</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
+<script>
+  // AQUI QUE SE ABRE O Menu!!!&*621!
+  const toggleButton = document.getElementById('menu-toggle');
+  const menu = document.getElementById('leftMenu');
+
+  toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+</script>

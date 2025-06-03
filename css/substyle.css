@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1d1d1f;
+    color: white;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    #subtitulo {
+        padding: 0;
+        margin-bottom: 50px;
+        font-size: 120%;
+        font-family: 'Silkscreen', sans-serif;
+        color: #8FCE12;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    color: #ce008a;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+        font-size: 24px;
+        font-family: Arial;
+        width: 100%;
+        padding: 1.4px;
+    }
+}
+
+input {
+    width: 380px;
+    height: 45px;
+    font-size: 20px;
+    background-color: #454547;
+    border-radius: 10px;
+    color: white;
+    padding-left: 15px;
+}
+
+button {
+    background-color: #8fce12;
+    color: white;
+    border-radius: 50px;
+    width: 250px;
+    height: 52px;
+    font-size: 23px;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.item {
+    text-align: center;
+    font-size: 23px;
+    width: 170px;
+    /* border: solid blue; */
+}
+
+
+.grade {
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px 240px 240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+
+.inp {
+    font-size: 23px;
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.adic {
+    background-color: #ce008a;
+    border-radius: 50px;
+    width: 300px;
+}
+
+hr {
+    margin-LEFT: 120px;
+    margin-right: 120PX;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+::-webkit-scrollbar {
+    background: #1a1a1a;
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8FCE12;
+    border-radius: 5px;
+    border: 2px solid #313133;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(206, 0, 138, 0.85);
+}
+
+/* MISC 2... MUDANDO A cor DA SELEÇÃO DO MOUSE */
+
+::selection {
+    background: #8FCE12;
+    color: #000;
+}
+
+/* O MENU!!!!!!!!!!!!!!!*/
+.menu-button {
+    position: fixed;
+    top: 15.4px;
+    left: 10px;
+    z-index: 1100;
+    font-size: 30px;
+    background: transparent;
+    color: #8FCE12;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+}
+
+.menu-button:active {
+    transform: scale(0.9);
+}
+
+/* Menu lateral */
+.left-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 240px;
+    height: 100vh;
+    background-color: #202022;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    padding-left: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000 !important;
+}
+
+/* ABRINDO O MENU!!!!!!!! */
+.left-menu.open {
+    left: 0;
+}
+
+.left-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-menu li {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.left-menu a {
+    color: #8FCE12;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+.left-menu a:hover {
+    color: rgba(206, 0, 138, 0.85);
+}
+/* === Estilos para a Tabela de Listagem de Jogos em #res === */
+
+#res table {
+    width: 90%; /* Ajuste a largura conforme necessário, 90% para ter alguma margem lateral */
+    margin: 25px auto; /* Centraliza a tabela e adiciona margem superior/inferior */
+    border-collapse: collapse; /* Remove espaços entre as bordas das células */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão do seu site */
+    background-color: #2a2a2e; /* Um tom escuro, pode ser ajustado para #202022 ou #313133 se preferir */
+    color: #E0E0E0; /* Cor de texto clara para boa legibilidade */
+    border-radius: 8px; /* Consistente com o border-radius do .news-card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra similar ao .news-card */
+    overflow: hidden; /* Garante que o border-radius seja aplicado corretamente ao cabeçalho/rodapé */
+}
+
+/* Opcional: Estilo para um título de tabela, se você adicionar um <caption> via JavaScript */
+#res caption {
+    caption-side: top;
+    font-size: 1.4em; /* Tamanho um pouco maior para o título */
+    font-weight: bold;
+    color: #8FCE12; /* Cor de destaque principal */
+    padding: 15px 0;
+    margin-bottom: 15px; /* Espaço abaixo do título da tabela */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#res thead tr {
+    background-color: #313133; /* Cor de fundo do cabeçalho, como em .news-card ou .container */
+}
+
+#res th {
+    color: #8FCE12; /* Cor de destaque principal para os textos do cabeçalho */
+    padding: 14px 18px; /* Bom espaçamento interno */
+    text-align: left; /* Alinhamento padrão para cabeçalhos */
+    font-size: 1.1em; /* Um pouco maior que o texto normal */
+    font-weight: bold;
+    border-bottom: 2px solid #8FCE12; /* Linha de destaque abaixo do cabeçalho */
+    text-transform: uppercase; /* Para dar mais ênfase aos títulos das colunas */
+    letter-spacing: 0.5px; /* Leve espaçamento entre letras */
+}
+
+#res td {
+    padding: 12px 18px; /* Espaçamento interno para as células */
+    border-bottom: 1px solid #404040; /* Linha sutil separando as linhas de dados */
+    font-size: 1em; /* Tamanho padrão para os dados */
+    color: #D1D1D1; /* Cor de texto para os dados, ligeiramente mais suave */
+}
+
+#res tbody tr {
+    background-color: #2a2a2e; /* Cor base das linhas, pode ser a mesma do table background */
+}
+
+#res tbody tr:nth-child(even) {
+    background-color: #252528; /* Efeito zebrado sutil para facilitar a leitura em linhas pares */
+}
+
+#res tbody tr:last-child td {
+    border-bottom: none; /* Remove a borda da última linha para um visual mais limpo */
+}
+
+#res tbody tr:hover {
+    background-color: rgba(206, 0, 138, 0.25); /* Cor de destaque secundária no hover, com transparência */
+    color: #FFFFFF; /* Garante que o texto fique branco e legível no hover */
+    cursor: default; /* Ou 'pointer' se as linhas forem clicáveis para alguma ação */
+}
+
+/* Ajustes para a div #res se necessário */
+#res {
+    padding: 0 10px; /* Adiciona um pequeno padding lateral para que a tabela não cole nas bordas em telas menores, se a tabela for 100% de largura */
+    width: 100%; /* Garante que #res ocupe o espaço disponível para centralizar a tabela corretamente */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    font-size: x-large;
+    color: #8fce12;
+    text-align: center;
+    margin: 25px;
+}
+#res p {
+    font-size: 25px;
+}
